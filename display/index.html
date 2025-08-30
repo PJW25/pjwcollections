@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Priyanka Jewellery Works</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Fonts (elegant luxury vibe) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PRELOADER (fullscreen logo) -->
+  <div id="preloader">
+    <img src="assets/PJW.png" alt="Priyanka Jewellery Works" class="preloader-logo" />
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">Priyanka Jewellery Works</div>
+
+    <div class="logo">
+      <img src="assets/PJW.png" alt="Priyanka Jewellery Works Logo" class="logo-img" />
+    </div>
+
+    <nav id="nav-links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#today">Today’s Pick</a>
+      <a href="#designs">Designs</a>
+      <a href="#about">About</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" aria-controls="nav-links" aria-expanded="false">
+      &#9776;
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>Experience a perfect blend of trust and quality you deserve.</h1>
+    <p>Handcrafted with precision and passion at <strong>Priyanka Jewellery Works</strong>.</p>
+  </section>
+
+  <!-- CAROUSEL -->
+  <section id="today" class="section">
+    <h2 class="section-title">Today’s Pick</h2>
+    <div class="carousel" role="region" aria-label="Today’s Pick Carousel">
+      <div class="slides">
+        <img src="assets/art/1.jpeg" alt="Featured design 1" />
+        <img src="assets/art/2.jpeg" alt="Featured design 2" />
+        <img src="assets/art/3.jpeg" alt="Featured design 3" />
+        <img src="assets/art/4.jpeg" alt="Featured design 4" />
+        <img src="assets/art/5.jpeg" alt="Featured design 5" />
+        <img src="assets/art/6.jpeg" alt="Featured design 6" />
+          <img src="assets/art/7.jpeg" alt="Featured design 7" />
+  <img src="assets/art/8.jpeg" alt="Featured design 8" />
+      </div>
+      <div class="carousel-buttons">
+        <button class="car-btn" aria-label="Previous" onclick="moveSlide(-1)">‹</button>
+        <button class="car-btn" aria-label="Next" onclick="moveSlide(1)">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="designs" class="section">
+    <h2 class="section-title">Other Designs</h2>
+    <div class="gallery" aria-label="Product Gallery">
+      <img src="assets/jewel.jpg" alt="Design 1" />
+      <img src="assets/jewel.jpg" alt="Design 2" />
+      <img src="assets/jewel.jpg" alt="Design 3" />
+      <img src="assets/jewel.jpg" alt="Design 4" />
+      <img src="assets/jewel.jpg" alt="Design 5" />
+      <img src="assets/jewel.jpg" alt="Design 6" />
+      <img src="assets/jewel.jpg" alt="Design 7" />
+      <img src="assets/jewel.jpg" alt="Design 8" />
+      <img src="assets/jewel.jpg" alt="Design 9" />
+      <img src="assets/jewel.jpg" alt="Design 10" />
+    </div>
+  </section>
+
+  <!-- BRAND STORY -->
+  <section class="brand-story section" id="about">
+    <h2>Experience a perfect blend of trust and quality you deserve.</h2>
+    <p>Handcrafted with precision and passion at <strong>Priyanka Jewellery Works</strong>.</p>
+
+    <div class="brand-note">
+      <p>Please note, these are <strong>gold-infused</strong> and made from a unique blend of materials, ensuring lasting beauty and sophisticated charm.</p>
+    </div>
+
+    <div class="brand-caution">
+      <h3>Caution</h3>
+      <p>Do not spray perfume or other chemicals directly on the jewellery. Store in a dry, cool place for lasting shine.</p>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="location" class="section">
+    <h2 class="section-title">Visit Our Shop</h2>
+    <p class="location-text"></p>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.351038069433!2d74.49895997543972!3d15.838136945582434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf6700409603b7%3A0x869f6094a2d83e50!2sPriyanka%20Jewellery%20Works!5e0!3m2!1sen!2sin!4v1756023894212!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <p>Contact | Connect us:</p>
+    <p>
+      <a href="https://www.instagram.com/priyankajewelleryworks?igsh=MXBwODMyYzM3YXZ1cw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram </a> 
+    </p>
+    <p>&copy; 2025 Priyanka Jewellery Works</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="close" aria-label="Close preview">&times;</button>
+    <img class="lightbox-content" id="lightbox-img" alt="Expanded view" />
+    <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+    <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <!-- FLOATING PORTRAIT VIDEO -->
+  <div class="video-wrapper" id="video-wrapper">
+    <video id="promoVideo" autoplay muted loop playsinline>
+      <source src="assets/VN20240805_013714.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
